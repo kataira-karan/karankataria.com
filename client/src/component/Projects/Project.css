@@ -1,0 +1,22 @@
+.project-container {
+  /* background-color: beige; */
+}
+
+.project-container-header {
+  width: 100%;
+  background-color: red;
+}
+
+.projects-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  transform: translateY(110%);
+  transition: 0.5s all ease-in-out;
+  
+}
+
+.projects-title-visible{
+  transform: translate(0%);
+  transition: 0.5s all ease-in-out;
+}

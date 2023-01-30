@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+.navigation-bar {
+  display: flex;
+  height: 10vh;
+  transform: translateY(-100%);
+  transition: all 1s ease-in-out;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Concert One", cursive;
+  font-size: 1.5rem;
+  color: black;
+  box-shadow: 1px 1px 5px gray;
+}
+
+.navigation-bar-active {
+  transform: translateY(0%);
+  transition: all 1s ease-in-out;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-list-item {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.resume-button {
+  background-color: transparent;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "Concert One", cursive;
+}
+.resume-button:hover .download-option {
+  background-color: red;
+}
+
+.download-resume {
+  position: relative;
+}
+
+.download-option {
+  height: 100%;
+  width: 100%;
+}
+
+.mobile-menu-button{
+  display: none;
+}
+
+.mobile-menu {
+  position: absolute;
+  display: flex;
+  flex-direction: row ;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  z-index: 99;
+  display: none;
+}
+.mobile-menu-container{
+  display: none;
+}
+
+.open-mobile-menu{
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-list {
+    display: none;
+  }
+  .mobile-menu-container{
+    display: block;
+    z-index: 99;
+  }
+  .mobile-menu-button{
+    display: block;
+    z-index: 99;
+  }
+  
+}

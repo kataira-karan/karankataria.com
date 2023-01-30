@@ -1,0 +1,145 @@
+.about-me-section{
+  /* background-color: #FAFAFA; */
+  width: 100vw;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.about-me-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 2rem;
+    transform: translateY(-200%);
+}
+.about-me-header-active{
+    transition: all 2s ease-in-out;
+    transform: translateY(0%);
+}
+.about-me-header-description{
+    width: 60%;
+    text-align: center;
+    line-height: 1.4rem;
+}
+
+.about-me-container {
+  display: flex;
+  width: 75%;
+  padding: 2rem 5rem;
+  margin: 0 auto;
+  /* background-color: antiquewhite; */
+}
+
+.about-me-intro{
+ display: flex;
+ width: 50%;
+ flex-direction: column;
+ justify-content: flex-start;
+ transition: all 2s ease-in-out;
+ transform: translateX(-130%);
+}      
+
+.about-me-intro-active{
+    transition: all 2s ease-in-out;
+    transform: translateX(0%);
+} 
+
+.about-me{
+   min-width: 50%;
+   width: 75%;
+   line-height: 1.4rem;
+}
+
+.about-my-skills{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    transition: all 2s ease-in-out;
+    transform: translateX(200%);
+}
+
+.about-my-skills-active{
+    transition: all 2s ease-in-out;
+    transform: translateX(0%);
+    width: 50%;
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+.getintouch-button{
+    padding:1rem;
+    width: fit-content;
+    block-size: fit-content;
+    border:none;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: rgb(234, 137, 137);
+    cursor: pointer;
+    margin-block: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .about-me-section{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        /* background-color: red; */
+    }
+
+    .about-me-container{
+        flex-direction: column;
+        width: 100vw;
+        /* background-color: aliceblue; */
+        text-align: center;
+        align-items: center;
+        
+        /* background-color: red; */
+
+    }
+
+    .getintouch-button{
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .about-me-intro {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        /* background-color: aqua; */
+    }
+
+    .about-me{
+        padding:2rem;
+        margin: auto;
+        /* background-color: antiquewhite; */
+    }
+    .getintouch-button{
+        align-items: center;
+        margin: auto;
+    }
+
+    .about-my-skills{
+        width: 100vw;
+        background-color: aliceblue;
+    }
+
+    .skills{
+        align-items: flex-end;
+        justify-content: center ;
+        width: 80%;
+        margin: auto;
+        /* background-color:red; */
+    }
+}

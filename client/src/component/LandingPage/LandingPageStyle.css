@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap");
+.landing-page-container {
+  height: 80vh;
+  display: flex;
+  width: 100vw;
+  overflow: hidden;
+  /* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
+}
+
+.landing-page-content {
+  display: flex;
+  justify-content: space-evenly;
+  height: 80%;
+  width: 90%;
+  transform: translateY(120%);
+  margin: auto;
+  overflow-y: hidden;
+  align-items: flex-start;
+  transition: all 1s cubic-bezier(0.5, 1, 0.5, 1);
+}
+
+.landingpage-page-activate {
+  transition: all 2s cubic-bezier(0.5, 1, 0.5, 1);
+  transform: translateY(0%);
+  transition-delay: 1s;
+}
+
+.landing-page-image {
+  object-fit: cover;
+  height: 100%;
+  width: auto;
+}
+
+.landing-page-intro {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.name-header{
+  font-size: 5rem;
+}
+
+.name {
+  font-size: calc(4rem + 0.390625vw);
+  cursor: pointer;
+  position: relative;
+  line-height: 100%;
+  /* align-self: flex-start; */
+  font-family: "Mukta", sans-serif;
+  font-weight: bold;
+  /* font-family: 'Londrina Outline', cursive; */
+  -webkit-text-stroke: 1px rgb(69, 65, 65);
+  color: transparent;
+  padding:0;
+}
+.name::before {
+  content: "KaranKataria";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  -webkit-text-stroke: 1px black;
+  overflow: hidden;
+  transition: width 1s ease-in-out;
+}
+
+.name:hover::before {
+  width: 100%;
+}
+
+.mobile-name{
+  font-size: 3rem;
+  display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .landing-page-content{
+      /* background-color: red; */
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 80vh;  
+      /* background-color: red; */
+
+    }
+
+    .name{
+      display: none;
+
+    }
+
+    .landing-page-intro{
+      width: 100%;
+      /* background-color: red; */
+      height: 20%;
+    }
+  
+  .mobile-name{
+    display: block;
+    /* background-color: red; */
+  }
+  .landing-page-image{
+    height: 50vh;
+    width: 80%;
+    width: auto;
+    margin: auto;
+  }
+ 
+  
+
+}
