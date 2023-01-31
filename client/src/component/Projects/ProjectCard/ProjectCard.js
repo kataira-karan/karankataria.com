@@ -45,7 +45,7 @@ const ProjectCard = (props) => {
           className={
             cardDirection === "left" ? "project-image" : "project-image-right"
           }
-          src={`/public/${img}`}
+          src={require(`/public/${img}`)}
         ></img>
       </div>
 
